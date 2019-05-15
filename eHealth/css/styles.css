@@ -1,6 +1,5 @@
 html *
 {
-   font-size: 1em !important;
    font-family: Arial !important;
 }
 
@@ -73,9 +72,106 @@ li.dropdown{
   height: 10%;
 }
 
+#syncronize{
+  float: right; 
+  margin-right: 4%;
+}
+
 #login{
   float: right;
-  margin-right: 8%;
+}
+
+.container{
+   min-width: 310px;
+   max-width: 400px; 
+   height: 300px; 
+   margin: 0 auto
+  }
+
+.container2{
+  padding: 16px;
+  padding-top: 1px;
+}
+
+span.psw{
+  float: right;
+  padding-top: 16px;
+}
+
+.modal{
+  color: white;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 5%;
+  right: 65%;
+  top: 3%;
+  overflow: auto;
+  background-color: grey;
+  padding-top: 10px;
+}
+
+.loginHeader{
+  text-align: center;
+}
+
+modal-content{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 5px solid #888;
+  width: 80%;
+}
+
+button{
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+.close{
+  position: relative;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold; 
+}
+
+.close:hover, .close:focus{
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
 }
 
 /* BODY CSS */

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8"/>
 
-	<title>eHealth</title>
-	<meta description="This is the website of eHealth Polar Vantage">
+	<title>Harmony</title>
+	<meta description="This is the website of Harmony Polar Vantage">
 </head>
 <body>
 	<?php require_once('controllers/controllerHeader.php');?>

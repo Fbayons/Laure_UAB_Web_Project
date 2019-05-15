@@ -7,7 +7,10 @@ $(function () {
         },
 
         title: {
-            text: 'Speedometer'
+            text: 'Stress level'
+        },
+        credits:{
+            enabled: false
         },
 
         pane: {
@@ -22,12 +25,12 @@ $(function () {
             max: 200,
 
             minorTickInterval: 'auto',
-            minorTickWidth: 1,
+            minorTickWidth: 0,
             minorTickLength: 10,
-            minorTickPosition: 'inside',
+            minorTickPosition: '0',
             minorTickColor: '#666',
 
-            tickPixelInterval: 30,
+            tickPixelInterval: '',
             tickWidth: 2,
             tickPosition: 'inside',
             tickLength: 10,
@@ -37,34 +40,36 @@ $(function () {
                 rotation: 'auto'
             },
             title: {
-                text: 'km/h'
+                text: 'stress'
             },
             plotBands: [{
                 from: 0,
+                to: 40,
+                color: 'blue' // blue
+            }, {
+                from: 40,
+                to: 80,
+                color: 'green' // green
+            }, {
+                from: 80,
                 to: 120,
-                color: '#55BF3B' // green
+                color: 'yellow' // yellow
             }, {
                 from: 120,
                 to: 160,
-                color: '#DDDF0D' // yellow
+                color: 'orange' // yellow
             }, {
                 from: 160,
                 to: 200,
-                color: '#DF5353' // red
-            }, {
-              from: 100,
-                to: 140,
-                color: '#6677ff',
-                innerRadius: '100%',
-                outerRadius: '110%'
-            }]
+                color: 'red' // red
+            },]
         },
 
         series: [{
-            name: 'Speed',
+            name: 'Stress',
             data: [80],
             tooltip: {
-                valueSuffix: ' km/h'
+                valueSuffix: ''
             }
         }]
 

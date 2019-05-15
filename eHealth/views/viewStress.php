@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
-	<script src="js/stressCoutner.js"></script>
-	<script src="https://code.highcharts.com/highcharts.src.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/highcharts-more.js"></script>
-	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="../js/stressCounter.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css"/>
 </head>
 <body>
-	<h1>Stress Level</h1>
+	<h1 style="color: white">Stress Level</h1>
 
-	<div id="container" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto"></div>
+	<div id="container"></div>
 
 </body>
 </html>
